@@ -181,10 +181,7 @@ function truncateToWidth(text:string, maxPx:number, fontPx:number) {
 }
 
 function displayedTitle(index:number) {
-  const t = movies.value[index]?.title || ''
-  const maxPx = Math.max(90, Math.min(180, availableLabelPx() - 8))
-  const fontPx = Math.max(11, Math.min(16, Math.round(maxPx / 9)))
-  return truncateToWidth(t, maxPx, fontPx)
+  return movies.value[index]?.title || ''
 }
 
 </script>
