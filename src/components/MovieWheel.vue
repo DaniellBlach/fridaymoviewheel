@@ -31,10 +31,16 @@ import fetchMovies from './movieService'
 import '../assets/movie-wheel.css'
 import MovieModal from './MovieModal.vue'
 
-const movies = ref(fetchMovies())
+type MovieItem = {
+  id: string | number
+  title: string
+  watched?: boolean
+}
+
+const movies = ref<MovieItem[]>(fetchMovies())
 const spinning = ref(false)
 const rotation = ref(0)
-const selected = ref<{id:string;title:string} | null>(null)
+const selected = ref<MovieItem | null>(null)
 const minSpin = 3000
 const maxSpin = 15000
 const currentDuration = ref(minSpin)
