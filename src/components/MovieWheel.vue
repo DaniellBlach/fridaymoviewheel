@@ -5,7 +5,7 @@
         <div class="wheel" :style="wheelBgStyle" role="img" aria-label="Movie wheel"></div>
 
         <div class="labels">
-                  <div class="label" v-for="(m,i) in movies" :key="m.id" :style="labelStyle(i)">
+                  <div class="label" v-for="(m,i) in visibleMovies" :key="m.id" :style="labelStyle(i)">
                     <span class="labelText" :style="labelInnerStyle(i)">{{ displayedTitle(i) }}</span>
                   </div>
                 </div>
@@ -38,6 +38,7 @@ type MovieItem = {
 }
 
 const movies = ref<MovieItem[]>(fetchMovies())
+const visibleMovies = computed(() => movies.value.filter((movie) => movie.watched === false))
 const spinning = ref(false)
 const rotation = ref(0)
 const selected = ref<MovieItem | null>(null)
@@ -57,15 +58,15 @@ watch(modalOpen, (open) => {
 
 onUnmounted(() => { try { document.body.style.overflow = '' } catch(e){} })
 
-const sliceAngle = computed(() => (movies.value.length ? 360 / movies.value.length : 360))
+const sliceAngle = computed(() => (visibleMovies.value.length ? 360 / visibleMovies.value.length : 360))
 
 function randInt(max: number) {
   return Math.floor(Math.random() * max)
 }
 
 function spin() {
-  if (spinning.value || movies.value.length === 0) return
-  const idx = randInt(movies.value.length)
+  if (spinning.value || visibleMovies.value.length === 0) return
+  const idx = randInt(visibleMovies.value.length)
 
   // pick random duration between minSpin and maxSpin
   const duration = Math.floor(Math.random() * (maxSpin - minSpin + 1)) + minSpin
@@ -87,13 +88,13 @@ function spin() {
     const anglePer = sliceAngle.value || 360
     let bestIdx = 0
     let bestDist = 1e9
-    for (let i = 0; i < movies.value.length; i++) {
+    for (let i = 0; i < visibleMovies.value.length; i++) {
       const mid = (i * anglePer + anglePer / 2) % 360
       let diff = Math.abs(((mid + rot) % 360 + 360) % 360)
       if (diff > 180) diff = 360 - diff
       if (diff < bestDist) { bestDist = diff; bestIdx = i }
     }
-    const chosen = movies.value[bestIdx] ?? movies.value[0]
+      const chosen = visibleMovies.value[bestIdx] ?? visibleMovies.value[0]
     if (chosen) {
       selected.value = chosen
       modalOpen.value = true
@@ -103,8 +104,8 @@ function spin() {
 //const colors = ['#F4E409','#F1CF0A','#EEBA0B','#D9950A','#C36F09','#B55608','#A63C06','#8C1E03','#710000']
 const colors = ['#F44336','#E91E63','#9C27B0','#3F51B5','#2196F3','#009688','#4CAF50','#FF9800','#FFC107','#795548']
 const gradient = computed(() => {
-  if (!movies.value.length) return '#ddd'
-  return `conic-gradient(${movies.value.map((m, i) => `${colors[i % colors.length]} ${i * sliceAngle.value}deg ${(i + 1) * sliceAngle.value}deg`).join(',')})`
+  if (!visibleMovies.value.length) return '#ddd'
+  return `conic-gradient(${visibleMovies.value.map((m, i) => `${colors[i % colors.length]} ${i * sliceAngle.value}deg ${(i + 1) * sliceAngle.value}deg`).join(',')})`
 })
 
 const rotorStyle = computed(() => ({
@@ -187,7 +188,7 @@ function truncateToWidth(text:string, maxPx:number, fontPx:number) {
 }
 
 function displayedTitle(index:number) {
-  return movies.value[index]?.title || ''
+  return visibleMovies.value[index]?.title || ''
 }
 
 </script>
