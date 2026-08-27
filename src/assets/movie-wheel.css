@@ -144,7 +144,8 @@
 .close-modal:focus{ outline:none; border:none; }
 
 @media (max-width:520px){
-  .wheel-stage{ --wheel-size:432px; --label-r: calc(var(--wheel-size) / 2 - 46px); }
+  .movie-wheel-wrap{ padding: .5rem; }
+  .wheel-stage{ --wheel-size:min(432px, calc(100vw - 2rem)); --label-r: calc(var(--wheel-size) / 2 - 46px); width:var(--wheel-size); height:var(--wheel-size); }
   .label{ font-size:.85rem; max-width:86px }
   .controls .spin-btn{ padding:.6rem 1rem; font-size:.95rem }
   .controls .alt-btn{ padding:.5rem .85rem; font-size:.9rem }
