@@ -24,8 +24,8 @@
 .labels{ position:absolute; inset:0; pointer-events:none; }
 .label{
   position:absolute; top:50%; left:50%; transform-origin:center; 
-  color:#fff; text-align:center; font-size:0.95rem; padding:4px 8px; 
-  white-space:normal; line-height:1.05; text-shadow:0 1px 2px rgba(0,0,0,.6);
+  color:#1e1818;; text-align:center; font-size:0.95rem; padding:4px 8px;
+  white-space:normal; line-height:1.05; text-shadow:0 1px 2px rgba(0,0,0,.1);
   max-width: min(180px, calc(var(--wheel-size) * 0.22));
   box-sizing: border-box;
   overflow: visible;
@@ -43,7 +43,7 @@
   padding:14px 34px;
   border-radius:20px;
   min-height:56px;
-  background: linear-gradient(180deg,#ffeaa7 0%, #ffd24d 35%, #e6ac00 100%);
+  background: linear-gradient(180deg, #fde59c 0%, #ffc522 35%, #e0a101 100%);
   color:#1a1a1a;
   border: 1px solid rgba(255,255,255,0.10);
   box-shadow: 0 12px 30px rgba(214,169,36,0.10), 0 4px 12px rgba(0,0,0,0.28) inset;
@@ -124,7 +124,8 @@
   position:relative;
 }
 .mw-modal h2{ margin:0 0 12px; font-size:1.1rem; font-weight:600; color:#ddd }
-.mw-modal-head{ margin:0 0 12px; font-size:1.3rem; color: #ffd86a; font-weight:700 }
+.mw-modal-head{ margin:0 10px 12px; font-size:1.8rem; color: #efbd28; font-weight:700 }
+.mw-modal-text{ margin:0 10px 12px; font-size:1.3rem; color: #ffd86a; font-weight:700 }
 .mw-modal-body{ margin-bottom:12px; }
 .movie-name{ display:inline; font-size:1.3rem; margin-left:8px; color:inherit; font-weight:700; }
 .mw-modal-actions{ display:flex; justify-content:flex-end; }

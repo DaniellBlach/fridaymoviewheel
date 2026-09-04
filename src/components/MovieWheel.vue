@@ -101,8 +101,13 @@ function spin() {
     }
   }, duration)
 }
-//const colors = ['#F4E409','#F1CF0A','#EEBA0B','#D9950A','#C36F09','#B55608','#A63C06','#8C1E03','#710000']
-const colors = ['#F44336','#E91E63','#9C27B0','#3F51B5','#2196F3','#009688','#4CAF50','#FF9800','#FFC107','#795548']
+const baseColors = ['#EFEEDE','#F2E974','#F3E73F','#F4E624','#F4E409','#F3DA0A','#F1CF0A','#EEBA0B','#D9950A','#C36F09','#B55608']
+const colors = [...baseColors]
+
+for (let i = colors.length - 1; i > 0; i--) {
+  const j = Math.floor(Math.random() * (i + 1))
+  ;[colors[i], colors[j]] = [colors[j], colors[i]]
+}
 const gradient = computed(() => {
   if (!visibleMovies.value.length) return '#ddd'
   return `conic-gradient(${visibleMovies.value.map((m, i) => `${colors[i % colors.length]} ${i * sliceAngle.value}deg ${(i + 1) * sliceAngle.value}deg`).join(',')})`
