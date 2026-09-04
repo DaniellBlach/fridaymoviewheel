@@ -101,12 +101,14 @@ function spin() {
     }
   }, duration)
 }
-const baseColors = ['#EFEEDE','#F2E974','#F3E73F','#F4E624','#F4E409','#F3DA0A','#F1CF0A','#EEBA0B','#D9950A','#C36F09','#B55608']
-const colors = [...baseColors]
+const baseColors: string[] = ['#EFEEDE','#F2E974','#F3E73F','#F4E624','#F4E409','#F3DA0A','#F1CF0A','#EEBA0B','#D9950A','#C36F09','#B55608']
+const colors: string[] = [...baseColors]
 
 for (let i = colors.length - 1; i > 0; i--) {
   const j = Math.floor(Math.random() * (i + 1))
-  ;[colors[i], colors[j]] = [colors[j], colors[i]]
+  const temp = colors[i] ?? ''
+  colors[i] = colors[j] ?? ''
+  colors[j] = temp
 }
 const gradient = computed(() => {
   if (!visibleMovies.value.length) return '#ddd'

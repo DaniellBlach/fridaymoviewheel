@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps<{ open: boolean; title?: string }>()
+defineProps<{ open: boolean; title?: string }>()
 const emit = defineEmits(['update:open'])
 
 function close() {
