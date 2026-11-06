@@ -27,18 +27,14 @@
 
 <script setup lang="ts">
 import { ref, computed, watch, onUnmounted } from 'vue'
-import fetchMovies from './movieService'
+import fetchMovies, { getVisibleMovies, type Movie } from './movieService'
 import '../assets/movie-wheel.css'
 import MovieModal from './MovieModal.vue'
 
-type MovieItem = {
-  id: string | number
-  title: string
-  watched?: boolean
-}
+type MovieItem = Movie
 
 const movies = ref<MovieItem[]>(fetchMovies())
-const visibleMovies = computed(() => movies.value.filter((movie) => movie.watched === false))
+const visibleMovies = computed(() => getVisibleMovies(movies.value))
 const spinning = ref(false)
 const rotation = ref(0)
 const selected = ref<MovieItem | null>(null)
