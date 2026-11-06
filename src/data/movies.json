@@ -2,341 +2,656 @@
   {
     "id": 1,
     "title": "Król Lew",
-    "watched": false
-  },
-  {
-    "id": 2,
-    "title": "Zwierzogród",
-    "watched": false
-  },
-  {
-    "id": 3,
-    "title": "Madagaskar",
-    "watched": false
+    "watched": false,
+    "sequels": [
+      {
+        "id": 2,
+        "title": "Król Lew II: Czas Simby",
+        "watched": false
+      },
+      {
+        "id": 3,
+        "title": "Król Lew 3: Hakuna Matata",
+        "watched": false
+      }
+    ]
   },
   {
     "id": 4,
-    "title": "Epoka lodowcowa",
-    "watched": false
-  },
-  {
-    "id": 5,
-    "title": "Gdzie jest Nemo",
-    "watched": false
+    "title": "Zwierzogród",
+    "watched": false,
+    "sequels": [
+      {
+        "id": 5,
+        "title": "Zwierzogród 2",
+        "watched": false
+      }
+    ]
   },
   {
     "id": 6,
-    "title": "Ratatuj",
-    "watched": false
-  },
-  {
-    "id": 7,
-    "title": "Skok przez płot",
-    "watched": false
-  },
-  {
-    "id": 8,
-    "title": "101 dalmatyńczyków",
-    "watched": false
+    "title": "Madagaskar",
+    "watched": false,
+    "sequels": [
+      {
+        "id": 7,
+        "title": "Madagaskar 2",
+        "watched": false
+      },
+      {
+        "id": 8,
+        "title": "Madagaskar 3",
+        "watched": false
+      }
+    ]
   },
   {
     "id": 9,
-    "title": "Zakochany kundel",
-    "watched": false
-  },
-  {
-    "id": 10,
-    "title": "Dawno temu w trawie",
-    "watched": false
-  },
-  {
-    "id": 11,
-    "title": "Rio",
-    "watched": false
-  },
-  {
-    "id": 12,
-    "title": "Rybki z ferajny",
-    "watched": false
-  },
-  {
-    "id": 13,
-    "title": "Rango",
-    "watched": false
+    "title": "Epoka lodowcowa",
+    "watched": false,
+    "sequels": [
+      {
+        "id": 10,
+        "title": "Epoka lodowcowa 2: Odwilż",
+        "watched": false
+      },
+      {
+        "id": 11,
+        "title": "Epoka lodowcowa 3: Era dinozaurów",
+        "watched": false
+      },
+      {
+        "id": 12,
+        "title": "Epoka lodowcowa 4: Wędrówka kontynentów",
+        "watched": false
+      },
+      {
+        "id": 13,
+        "title": "Epoka lodowcowa 5: Mocne uderzenie",
+        "watched": false
+      }
+    ]
   },
   {
     "id": 14,
-    "title": "Kung Fu Panda",
-    "watched": false
-  },
-  {
-    "id": 15,
-    "title": "Robin Hood",
-    "watched": true
+    "title": "Gdzie jest Nemo",
+    "watched": false,
+    "sequels": [
+      {
+        "title": "Gdzie jest Dory",
+        "watched": false,
+        "id": 15
+      }
+    ]
   },
   {
     "id": 16,
-    "title": "Mrówka Z",
-    "watched": false
+    "title": "Ratatuj",
+    "watched": false,
+    "sequels": []
   },
   {
     "id": 17,
-    "title": "Mustang z Dzikiej Doliny",
-    "watched": false
+    "title": "Skok przez płot",
+    "watched": false,
+    "sequels": []
   },
   {
-    "id": 19,
-    "title": "Rogate ranczo",
-    "watched": false
+    "id": 18,
+    "title": "101 dalmatyńczyków",
+    "watched": false,
+    "sequels": [
+      {
+        "id": 19,
+        "title": "101 dalmatyńczyków II: Londyńska przygoda",
+        "watched": false
+      }
+    ]
   },
   {
     "id": 20,
-    "title": "Wielki mysi detektyw",
-    "watched": false
-  },
-  {
-    "id": 21,
-    "title": "Szeregowiec Dolot",
-    "watched": false
+    "title": "Zakochany kundel",
+    "watched": false,
+    "sequels": [
+      {
+        "title": "Zakochany kundel II: Przygody Chapsa",
+        "watched": false,
+        "id": 21
+      }
+    ]
   },
   {
     "id": 22,
-    "title": "Legendy sowiego królestwa",
-    "watched": false
+    "title": "Dawno temu w trawie",
+    "watched": false,
+    "sequels": []
   },
   {
     "id": 23,
-    "title": "Turbo",
-    "watched": false
-  },
-  {
-    "id": 24,
-    "title": "MULAN",
-    "watched": false
+    "title": "Rio",
+    "watched": false,
+    "sequels": [
+      {
+        "id": 24,
+        "title": "Rio 2",
+        "watched": false
+      }
+    ]
   },
   {
     "id": 25,
-    "title": "Planeta Skarbów",
-    "watched": true
+    "title": "Rybki z ferajny",
+    "watched": false,
+    "sequels": []
   },
   {
     "id": 26,
-    "title": "Herkules",
-    "watched": false
+    "title": "Rango",
+    "watched": false,
+    "sequels": []
   },
   {
     "id": 27,
-    "title": "Atlantyda",
-    "watched": false
-  },
-  {
-    "id": 28,
-    "title": "Shrek",
-    "watched": false
-  },
-  {
-    "id": 29,
-    "title": "Spirited Away: W krainie bogów",
-    "watched": false
-  },
-  {
-    "id": 30,
-    "title": "Robaczki z Zaginionej Doliny",
-    "watched": false
+    "title": "Kung Fu Panda",
+    "watched": false,
+    "sequels": [
+      {
+        "id": 28,
+        "title": "Kung Fu Panda 2",
+        "watched": false
+      },
+      {
+        "id": 29,
+        "title": "Kung Fu Panda 3",
+        "watched": false
+      },
+      {
+        "id": 30,
+        "title": "Kung Fu Panda 4",
+        "watched": false
+      }
+    ]
   },
   {
     "id": 31,
-    "title": "Aladyn",
-    "watched": false
+    "title": "Robin Hood",
+    "watched": true,
+    "sequels": []
   },
   {
     "id": 32,
-    "title": "Zaplątani",
-    "watched": false
+    "title": "Mrówka Z",
+    "watched": false,
+    "sequels": []
   },
   {
     "id": 33,
-    "title": "Garfield",
-    "watched": false
+    "title": "Mustang z Dzikiej Doliny",
+    "watched": false,
+    "sequels": []
   },
   {
     "id": 34,
-    "title": "Polowanie na mysz",
-    "watched": false
+    "title": "Rogate ranczo",
+    "watched": false,
+    "sequels": []
   },
   {
     "id": 35,
-    "title": "Toy Story",
-    "watched": false
+    "title": "Wielki mysi detektyw",
+    "watched": false,
+    "sequels": []
   },
   {
     "id": 36,
-    "title": "Potwory i spółka",
-    "watched": false
+    "title": "Szeregowiec Dolot",
+    "watched": false,
+    "sequels": []
   },
   {
     "id": 37,
-    "title": "Iniemamocni",
-    "watched": false
+    "title": "Legendy sowiego królestwa",
+    "watched": false,
+    "sequels": []
   },
   {
     "id": 38,
-    "title": "WALL·E",
-    "watched": false
+    "title": "Turbo",
+    "watched": false,
+    "sequels": []
   },
   {
     "id": 39,
-    "title": "Auta",
-    "watched": false
-  },
-  {
-    "id": 40,
-    "title": "Kot w butach",
-    "watched": false
+    "title": "MULAN",
+    "watched": false,
+    "sequels": [
+      {
+        "id": 40,
+        "title": "Mulan II",
+        "watched": false
+      }
+    ]
   },
   {
     "id": 41,
-    "title": "Lili i stitch",
-    "watched": false
+    "title": "Planeta Skarbów",
+    "watched": true,
+    "sequels": []
   },
   {
     "id": 42,
-    "title": "Megamocny",
-    "watched": false
+    "title": "Herkules",
+    "watched": false,
+    "sequels": []
   },
   {
     "id": 43,
-    "title": "Potwory kontra Obcy",
-    "watched": false
-  },
-  {
-    "id": 44,
-    "title": "Droga do El Dorado",
-    "watched": false
+    "title": "Atlantyda",
+    "watched": false,
+    "sequels": [
+      {
+        "id": 44,
+        "title": "Atlantyda 2",
+        "watched": false
+      }
+    ]
   },
   {
     "id": 45,
-    "title": "Sindbad: Legenda siedmiu mórz",
-    "watched": true
-  },
-  {
-    "id": 46,
-    "title": "Książę Egiptu",
-    "watched": true
-  },
-  {
-    "id": 47,
-    "title": "Wielka Szóstka",
-    "watched": false
-  },
-  {
-    "id": 48,
-    "title": "Piorun",
-    "watched": false
+    "title": "Shrek",
+    "watched": false,
+    "sequels": [
+      {
+        "id": 46,
+        "title": "Shrek 2",
+        "watched": false
+      },
+      {
+        "id": 47,
+        "title": "Shrek Trzeci",
+        "watched": false
+      },
+      {
+        "id": 48,
+        "title": "Shrek Forever",
+        "watched": false
+      }
+    ]
   },
   {
     "id": 49,
-    "title": "Nowe szaty króla",
-    "watched": false
+    "title": "Spirited Away: W krainie bogów",
+    "watched": false,
+    "sequels": []
   },
   {
     "id": 50,
-    "title": "Klopsiki i inne zjawiska pogodowe",
-    "watched": false
+    "title": "Robaczki z Zaginionej Doliny",
+    "watched": false,
+    "sequels": []
   },
   {
     "id": 51,
-    "title": "Tarzan",
-    "watched": false
+    "title": "Aladyn",
+    "watched": false,
+    "sequels": []
   },
   {
     "id": 52,
-    "title": "Jak wytresować smoka",
-    "watched": false
+    "title": "Zaplątani",
+    "watched": false,
+    "sequels": []
   },
   {
     "id": 53,
-    "title": "12 prac Asteriksa",
-    "watched": false
-  },
-  {
-    "id": 54,
-    "title": "Czerwony kapturek prawdziwa historia",
-    "watched": false
+    "title": "Garfield",
+    "watched": true,
+    "sequels": [
+      {
+        "title": "Garfield 2",
+        "watched": false,
+        "id": 54
+      }
+    ]
   },
   {
     "id": 55,
-    "title": "Wielka podróż Bolka i Lolka",
-    "watched": false
+    "title": "Polowanie na mysz",
+    "watched": false,
+    "sequels": []
   },
   {
     "id": 56,
-    "title": "Kosmiczny mecz",
-    "watched": false
-  },
-  {
-    "id": 57,
-    "title": "Na fali",
-    "watched": false
-  },
-  {
-    "id": 58,
-    "title": "Norymberga",
-    "watched": false
-  },
-  {
-    "id": 59,
-    "title": "Hotel transylwania",
-    "watched": false
+    "title": "Toy Story",
+    "watched": false,
+    "sequels": [
+      {
+        "id": 57,
+        "title": "Toy Story 2",
+        "watched": false
+      },
+      {
+        "id": 58,
+        "title": "Toy Story 3",
+        "watched": false
+      },
+      {
+        "id": 59,
+        "title": "Toy Story 4",
+        "watched": false
+      }
+    ]
   },
   {
     "id": 60,
-    "title": "Sezon na misia",
-    "watched": false
-  },
-  {
-    "id": 61,
-    "title": "Ratunku, jestem rybką!",
-    "watched": false
+    "title": "Potwory i spółka",
+    "watched": false,
+    "sequels": [
+      {
+        "id": 61,
+        "title": "Uniwersytet Potworny",
+        "watched": false
+      }
+    ]
   },
   {
     "id": 62,
-    "title": "Piękna i bestia",
-    "watched": false
-  },
-  {
-    "id": 63,
-    "title": "Dzwonnik z notre dame",
-    "watched": false
+    "title": "Iniemamocni",
+    "watched": false,
+    "sequels": [
+      {
+        "id": 63,
+        "title": "Iniemamocni 2",
+        "watched": false
+      }
+    ]
   },
   {
     "id": 64,
-    "title": "Wpuszczony w kanał",
-    "watched": false
+    "title": "WALL·E",
+    "watched": false,
+    "sequels": []
   },
   {
     "id": 65,
-    "title":"7 krasnoludków historia prawdziwa",
-    "watched": false
-  },
-  {
-    "id": 66,
-    "title": "Miasteczko Halloween",
-    "watched": false
-  },
-  {
-    "id": 67,
-    "title": "Gnijąca panna młoda",
-    "watched": false
+    "title": "Auta",
+    "watched": false,
+    "sequels": [
+      {
+        "id": 66,
+        "title": "Auta 2",
+        "watched": false
+      },
+      {
+        "id": 67,
+        "title": "Auta 3",
+        "watched": false
+      }
+    ]
   },
   {
     "id": 68,
-    "title": "Franweenie",
-    "watched": false
+    "title": "Kot w butach",
+    "watched": false,
+    "sequels": [
+      {
+        "id": 69,
+        "title": "Kot w butach: Ostatnie życzenie",
+        "watched": false
+      }
+    ]
   },
   {
-    "id": 69,
+    "id": 70,
+    "title": "Lili i stitch",
+    "watched": false,
+    "sequels": [
+      {
+        "id": 71,
+        "title": "Lilo i Stitch 2: Mały feler Stitcha",
+        "watched": false
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "title": "Megamocny",
+    "watched": true,
+    "sequels": []
+  },
+  {
+    "id": 73,
+    "title": "Potwory kontra Obcy",
+    "watched": false,
+    "sequels": []
+  },
+  {
+    "id": 74,
+    "title": "Droga do El Dorado",
+    "watched": false,
+    "sequels": []
+  },
+  {
+    "id": 75,
+    "title": "Sindbad: Legenda siedmiu mórz",
+    "watched": true,
+    "sequels": []
+  },
+  {
+    "id": 76,
+    "title": "Książę Egiptu",
+    "watched": true,
+    "sequels": []
+  },
+  {
+    "id": 77,
+    "title": "Wielka Szóstka",
+    "watched": false,
+    "sequels": []
+  },
+  {
+    "id": 78,
+    "title": "Piorun",
+    "watched": false,
+    "sequels": []
+  },
+  {
+    "id": 79,
+    "title": "Nowe szaty króla",
+    "watched": false,
+    "sequels": [
+      {
+        "id": 80,
+        "title": "Nowe szaty króla 2: Kronk – Nowe wcielenie",
+        "watched": false
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "title": "Klopsiki i inne zjawiska pogodowe",
+    "watched": false,
+    "sequels": [
+      {
+        "id": 82,
+        "title": "Klopsiki kontratakują",
+        "watched": false
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "title": "Tarzan",
+    "watched": false,
+    "sequels": [
+      {
+        "id": 84,
+        "title": "Tarzan 2: Początek legendy",
+        "watched": false
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "title": "Jak wytresować smoka",
+    "watched": false,
+    "sequels": [
+      {
+        "id": 86,
+        "title": "Jak wytresować smoka 2",
+        "watched": false
+      },
+      {
+        "id": 87,
+        "title": "Jak wytresować smoka 3",
+        "watched": false
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "title": "12 prac Asteriksa",
+    "watched": false,
+    "sequels": []
+  },
+  {
+    "id": 89,
+    "title": "Czerwony kapturek prawdziwa historia",
+    "watched": false,
+    "sequels": []
+  },
+  {
+    "id": 90,
+    "title": "Wielka podróż Bolka i Lolka",
+    "watched": false,
+    "sequels": []
+  },
+  {
+    "id": 91,
+    "title": "Kosmiczny mecz",
+    "watched": false,
+    "sequels": []
+  },
+  {
+    "id": 92,
+    "title": "Na fali",
+    "watched": false,
+    "sequels": []
+  },
+  {
+    "id": 93,
+    "title": "Norymberga",
+    "watched": false,
+    "sequels": []
+  },
+  {
+    "id": 94,
+    "title": "Hotel transylwania",
+    "watched": false,
+    "sequels": [
+      {
+        "id": 95,
+        "title": "Hotel Transylwania 2",
+        "watched": false
+      },
+      {
+        "id": 96,
+        "title": "Hotel Transylwania 3",
+        "watched": false
+      },
+      {
+        "id": 97,
+        "title": "Hotel Transylwania: Transformania",
+        "watched": false
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "title": "Sezon na misia",
+    "watched": false,
+    "sequels": [
+      {
+        "id": 99,
+        "title": "Sezon na misia 2",
+        "watched": false
+      },
+      {
+        "id": 100,
+        "title": "Sezon na misia 3",
+        "watched": false
+      },
+      {
+        "id": 101,
+        "title": "Sezon na misia 4: Strach się bać",
+        "watched": false
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "title": "Ratunku, jestem rybką!",
+    "watched": false,
+    "sequels": []
+  },
+  {
+    "id": 103,
+    "title": "Piękna i bestia",
+    "watched": false,
+    "sequels": []
+  },
+  {
+    "id": 104,
+    "title": "Dzwonnik z notre dame",
+    "watched": false,
+    "sequels": [
+      {
+        "id": 105,
+        "title": "Dzwonnik z Notre Dame II",
+        "watched": false
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "title": "Wpuszczony w kanał",
+    "watched": false,
+    "sequels": []
+  },
+  {
+    "id": 107,
+    "title": "7 krasnoludków historia prawdziwa",
+    "watched": false,
+    "sequels": [
+      {
+        "id": 108,
+        "title": "7 krasnoludków: Las to za mało",
+        "watched": false
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "title": "Miasteczko Halloween",
+    "watched": false,
+    "sequels": []
+  },
+  {
+    "id": 110,
+    "title": "Gnijąca panna młoda",
+    "watched": false,
+    "sequels": []
+  },
+  {
+    "id": 111,
+    "title": "Franweenie",
+    "watched": false,
+    "sequels": []
+  },
+  {
+    "id": 112,
     "title": "Trzej muszkieterowie",
-    "watched": false
+    "watched": false,
+    "sequels": []
   }
 ]
