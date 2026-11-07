@@ -75,7 +75,7 @@
   {
     "id": 14,
     "title": "Gdzie jest Nemo",
-    "watched": false,
+    "watched": true,
     "sequels": [
       {
         "title": "Gdzie jest Dory",
