@@ -153,7 +153,7 @@
   {
     "id": 27,
     "title": "Kung Fu Panda",
-    "watched": false,
+    "watched": true,
     "sequels": [
       {
         "id": 28,
@@ -181,7 +181,7 @@
   {
     "id": 32,
     "title": "Mrówka Z",
-    "watched": false,
+    "watched": true,
     "sequels": []
   },
   {
