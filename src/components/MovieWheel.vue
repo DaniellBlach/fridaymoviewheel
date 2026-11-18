@@ -1,5 +1,17 @@
 <template>
   <div class="movie-wheel-wrap">
+    <button
+      class="open-movie-table"
+      type="button"
+      aria-haspopup="dialog"
+      :aria-expanded="tableOpen"
+      @click="tableOpen = true"
+      aria-label="Otwórz listę filmów"
+    >
+      <span class="movie-table-button-label">Lista Filmów</span>
+      <FontAwesomeIcon class="movie-table-button-icon" :icon="faBars" />
+    </button>
+
     <div class="wheel-stage">
       <div class="wheel-rotor" :style="rotorStyle">
         <div class="wheel" :style="wheelBgStyle" role="img" aria-label="Movie wheel"></div>
@@ -22,6 +34,7 @@
     </div>
 
     <MovieModal v-model:open="modalOpen" :title="selected?.title" />
+    <MovieTable v-model:open="tableOpen" :movies="movies" />
   </div>
 </template>
 
@@ -30,6 +43,9 @@ import { ref, computed, watch, onUnmounted } from 'vue'
 import fetchMovies, { getVisibleMovies, type Movie } from './movieService'
 import '../assets/movie-wheel.css'
 import MovieModal from './MovieModal.vue'
+import MovieTable from './MovieTable.vue'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 type MovieItem = Movie
 
@@ -46,10 +62,11 @@ const spinsPerSec = 1.4285714286
 
 // modal state
 const modalOpen = ref(false)
+const tableOpen = ref(false)
 
-watch(modalOpen, (open) => {
-  // lock body scroll when modal is open
-  try { document.body.style.overflow = open ? 'hidden' : '' } catch (e) {}
+watch([modalOpen, tableOpen], ([modalIsOpen, tableIsOpen]) => {
+  // lock body scroll while either overlay is open
+  try { document.body.style.overflow = modalIsOpen || tableIsOpen ? 'hidden' : '' } catch (e) {}
 })
 
 onUnmounted(() => { try { document.body.style.overflow = '' } catch(e){} })
