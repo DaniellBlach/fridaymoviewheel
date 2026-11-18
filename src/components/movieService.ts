@@ -5,6 +5,7 @@ export type Movie = {
   title: string
   watched?: boolean
   sequels?: Movie[]
+  isSequel?: boolean
 }
 
 export function getVisibleMovies(items: Movie[]): Movie[] {
@@ -20,6 +21,19 @@ export function getVisibleMovies(items: Movie[]): Movie[] {
    const nextSequel = movie.sequels.find((sequel) => sequel.watched === false)
    return nextSequel ? [nextSequel] : []
   })
+}
+
+export function getAllMovies(items: Movie[]): Movie[] {
+  return items.flatMap((movie) => [movie, ...(movie.sequels ?? [])])
+}
+
+export function getMoviesByWatchedStatus(items: Movie[], watched: boolean): Movie[] {
+  return items
+    .flatMap((movie) => [
+      { ...movie, isSequel: false },
+      ...(movie.sequels ?? []).map((sequel) => ({ ...sequel, isSequel: true }))
+    ])
+    .filter((movie) => movie.watched === watched)
 }
 
 export default function fetchMovies(): Movie[] {
